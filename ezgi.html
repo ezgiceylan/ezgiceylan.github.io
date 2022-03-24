@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tahir Çelik</title>
+</head>
+
+
 <style>
-* {
-  box-sizing: border-box;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color:white 
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-header {
-  background-color: purple;
-  padding: 30px;
+.one {
+  grid-column: 1/4;
+  grid-row: 1;
+  background-color:pink;
   text-align: center;
-  font-size: 35px;
-  color: black;
-  border-radius:10px;
-  
+}
+.two {
+  grid-column: 1;
+  grid-row: 4 / 8;
+  background-color: pink;
+}
+.three {
+  grid-column: 2;
+  grid-row: 4 / 6;
+  background-color: red;
+}
+.four {
+  grid-column: 3;
+  grid-row: 4 / 6;
+  background-color:red;
+}
+.five {
+  grid-column: 2;
+  grid-row: 6 / 8;
+  background-color: purple;
+}
+.six {
+  grid-column: 3;
+  grid-row: 6 / 8;
+  background-color: red;
 }
 
 
-article {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #f1f1f1;
-  height: 300px; 
-}
-.isim{
-text-align:center;
-}
 
-footer {
-  background-color: grey;
- 
-}
 
 </style>
-</head>
 <body>
-<div class="isim"> 
-<h1>Ezgi Ceylan</h1>
-</div>
-
-<header>
-  <h3>HAKKIMDA</h3>
-  <p>22 yaşındayım.Marmara Üniversitesi'nde Bilgisayar Mühendisliği okuyorum.</p>
-</header>
-
-  <article>
-    <h1>İletişim</h1>
-    <a href="https://www.linkedin.com/in/ezgiceylann">linkedin.com/ezgiceylann</a><br>
-     <a href="https://www.instagram.com/ezgiceylann">instagram.com/ezgiceylann</a>
-    
-  </article>
-
-
+    <div class="wrapper">
+        <div class="one">
+            <h1>Ezgi Ceylan</h1>
+            <p></p>
+       Marmara üniversitesi</div>
+        
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+    </div>
 </body>
 </html>
-
